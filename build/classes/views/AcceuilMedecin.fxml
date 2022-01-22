@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AcceuilMedecinController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="453.0" prefWidth="269.0" style="-fx-background-color: #B0F2B6;">
+         <children>
+            <Text fx:id="msgBienvenue" layoutX="1.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue," wrappingWidth="226.13671875">
+               <font>
+                  <Font name="Century Gothic" size="33.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f3f3" layoutX="18.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clinique 221" wrappingWidth="152.0">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="67.0" fitWidth="51.0" layoutX="174.0" layoutY="4.0">
+               <image>
+                  <Image url="@../../../../../Downloads/kisspng-staff-of-hermes-caduceus-as-a-symbol-of-medicine-p-doctors-vector-5ad9e7cc056621.8284086315242300920221.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnDeconnecter" layoutX="10.0" layoutY="386.0" mnemonicParsing="false" onAction="#seDeconnecter" prefHeight="42.0" prefWidth="99.0" text="Se deconnecter" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnListerRv" layoutX="363.0" layoutY="187.0" mnemonicParsing="false" onAction="#ListerRv" prefHeight="42.0" prefWidth="158.0" text="Lister les rendez-vous" />
+      <Button fx:id="Rv" layoutX="363.0" layoutY="252.0" mnemonicParsing="false" onAction="#BtnRv" prefHeight="42.0" prefWidth="158.0" text="rendez-vous" />
+      <Circle fill="#b0f2b6" layoutX="398.0" layoutY="155.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="373.0" layoutY="173.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="389.0" layoutY="91.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="439.0" layoutY="54.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="448.0" layoutY="28.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="442.0" layoutY="8.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="364.0" layoutY="134.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="414.0" layoutY="125.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="414.0" layoutY="82.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="331.0" layoutY="198.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="280.0" layoutY="346.0" radius="50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="308.0" layoutY="289.0" radius="28.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="389.0" layoutY="54.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="308.0" layoutY="252.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="414.0" layoutY="36.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="339.0" layoutY="234.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#b0f2b6" layoutX="336.0" layoutY="164.0" radius="9.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

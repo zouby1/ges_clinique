@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ListerRvMedecinController">
+   <children>
+      <AnchorPane prefHeight="551.0" prefWidth="269.0" style="-fx-background-color: #b0f2b6;">
+         <children>
+            <Button fx:id="btnAnnuler" layoutX="48.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnAnnuler" prefHeight="36.0" prefWidth="152.0" text="Annuler" />
+            <Button fx:id="btnAcceuil" layoutX="48.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnAcceuil" prefHeight="36.0" prefWidth="152.0" text="Acceuil" />
+            <Text fx:id="msgErreur" fill="RED" layoutX="8.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez entrez l'id du rendez-vous">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt_id" layoutX="96.0" layoutY="187.0" prefHeight="29.0" prefWidth="51.0" promptText="id" />
+            <Text fill="#f5f3f3" layoutX="18.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clinique 221" wrappingWidth="152.0">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="72.0" fitWidth="55.0" layoutX="169.0" layoutY="8.0">
+               <image>
+                  <Image url="@../../../../../Downloads/kisspng-staff-of-hermes-caduceus-as-a-symbol-of-medicine-p-doctors-vector-5ad9e7cc056621.8284086315242300920221.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_rv" layoutX="268.0" layoutY="81.0" onMouseClicked="#getSelected" prefHeight="469.0" prefWidth="579.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="60.0" text="id" />
+            <TableColumn fx:id="col_libeller" prefWidth="134.0" text="Libeller" />
+            <TableColumn fx:id="col_date" prefWidth="128.0" text="Date" />
+            <TableColumn fx:id="col_heure" prefWidth="127.0" text="Heure" />
+            <TableColumn fx:id="col_nomPatient" prefWidth="127.0" text="nom du patient" />
+         </columns>
+      </TableView>
+      <Text layoutX="434.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des rendez-vous" wrappingWidth="246.57080078125">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
